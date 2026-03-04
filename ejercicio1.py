@@ -27,7 +27,7 @@ class Cronometro:
 class Main():
     vect = []
 
-    for i in range(10000):
+    for i in range(100000):
         vect.append(random.randint(1,100000))
 
     def seleccion_sort(lista):
