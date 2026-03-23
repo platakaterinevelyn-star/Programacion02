@@ -65,6 +65,3 @@ class Main:
     print(f"proyección : {AlgebraVectorial.proyeccion(a, b)}")
     print(f"componente : {AlgebraVectorial.componente(a, b)}")
     print(f"\nVector a normal: {a.normal()}")
-
-if __name__ == "__main__":
-    Main()
