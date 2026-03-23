@@ -1,6 +1,6 @@
 import math
 
-class Vector:
+class Vector():
     def __init__(self, x, y, z):
         self.x = x
         self.y = y
@@ -50,7 +50,7 @@ class AlgebraVectorial:
     def componente(a, b):
         return a.productoP(b) / b.longitud()
 
-class Main:
+class Main():
 
     v1 = Vector(3, 0, 0)
     v2 = Vector(0, 4, 0)
