@@ -64,4 +64,4 @@ class Main:
     print(f"Vector a: {a} sobre Vector b: {b}")
     print(f"proyección : {AlgebraVectorial.proyeccion(a, b)}")
     print(f"componente : {AlgebraVectorial.componente(a, b)}")
-    print(f"\nVector a normal: {a.normal()}")
+    print(f"Vector a normal: {a.normal()}")
