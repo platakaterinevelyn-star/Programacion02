@@ -1,21 +1,3 @@
-/*public class Operaciones{
-public float suma(float a, float b){
-return a + b;
-}
-public float suma(float a, float b, float c){
-return a + b + c;
-}
-public static void main(String[] args) {
-float r1, r2;
-Operaciones ejemplo = new Operaciones();
-r1 = ejemplo.suma(5.0f, 3.0f); // Llamando al primer método
-r2 = ejemplo.suma(2.0f, 3.0f, 4.0f); // Llamando al segundo
-método
-System.out.println("Resultado 1: " + r1);
-System.out.println("Resultado 2: " + r2);
-}
-}*/
-
 public class Mipunto {
     private double x;
     private double y;
@@ -28,7 +10,7 @@ public class Mipunto {
         this.x=a;
         this.y=b;
     }
-        public double getX() {
+    public double getX() {
         return x;
     }
 
@@ -46,8 +28,22 @@ public class Mipunto {
         return Math.sqrt(dx * dx + dy * dy);
     }
 
-    }
     
+}
+class mainMipunto {
+
+    public static void main(String[] args) {
+
+        Mipunto p1 = new Mipunto();        
+        Mipunto p2 = new Mipunto(10,30.5);  
+
+        double distancia = p1.distancia(p2);
+
+        System.out.println("Punto 1: (" + p1.getX() + ", " + p1.getY() + ")");
+        System.out.println("Punto 2: (" + p2.getX() + ", " + p2.getY() + ")");
+        System.out.println("Distancia entre los puntos: " + distancia);
+    }
+}
 
 
 
