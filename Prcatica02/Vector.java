@@ -32,6 +32,7 @@ public class Vector {
     public Vector escalar(double n) {
         return new Vector(x * n, y * n, z * n);
     }
+    
     @Override
     public String toString() {
         return "(" + x + ", " + y + ", " + z + ")";
