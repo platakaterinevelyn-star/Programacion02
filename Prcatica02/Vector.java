@@ -32,7 +32,7 @@ public class Vector {
     public Vector escalar(double n) {
         return new Vector(x * n, y * n, z * n);
     }
-    
+
     @Override
     public String toString() {
         return "(" + x + ", " + y + ", " + z + ")";
@@ -119,7 +119,5 @@ class mainVector {
 
         double comp = AlgebraVectorial.componente(v1, v2);
         System.out.println("h) Componente de v1 en v2: " + comp);
-
-
     }
 }
