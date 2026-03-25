@@ -115,9 +115,9 @@ class mainVector {
         System.out.println("f) ParalelasCz? " + AlgebraVectorial.paralela(v3, v4, "cruz"));
 
         Vector proy = AlgebraVectorial.proyeccion(v1, v2);
-        System.out.println("g) Proyección de v1 en v2: " + proy);
+        System.out.println("g) Proyección : " + proy);
 
         double comp = AlgebraVectorial.componente(v1, v2);
-        System.out.println("h) Componente de v1 en v2: " + comp);
+        System.out.println("h) Componente : " + comp);
     }
 }
