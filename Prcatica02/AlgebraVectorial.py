@@ -27,6 +27,12 @@ class AlgebraVectorial():
 
     def productoP(self, otro):
         return (self.x * otro.x) + (self.y * otro.y) + (self.z * otro.z)
+    
+    def productoV(self, b):
+        res_x = self.y * b.z - self.z * b.y
+        res_y = self.z * b.x - self.x * b.z
+        res_z = self.x * b.y - self.y * b.x
+        return AlgebraVectorial(res_x, res_y, res_z)
 
     def __str__(self):
         return f"({self.x}, {self.y}, {self.z})"
@@ -58,7 +64,8 @@ print(f"PerpendicularDiag: {perp}")
 a = AlgebraVectorial(2, 3, 0)
 b = AlgebraVectorial(5, 0, 0)
     
-print(f"Vector a: {a} sobre Vector b: {b}")
+print(f"Vector a: {a}, Vector b: {b}")
+print(f"ProductoVec: {a.productoV(b)}")
 print(f"proyección : {AlgebraVectorial.proyeccion(a, b)}")
 print(f"componente : {AlgebraVectorial.componente(a, b)}")
-print(f"Vector a normal: {a.normal()}")
+print(f"normal: {a.normal()}")
