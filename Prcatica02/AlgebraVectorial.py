@@ -29,10 +29,10 @@ class AlgebraVectorial():
         return (self.x * otro.x) + (self.y * otro.y) + (self.z * otro.z)
     
     def productoV(self, b):
-        res_x = self.y * b.z - self.z * b.y
-        res_y = self.z * b.x - self.x * b.z
-        res_z = self.x * b.y - self.y * b.x
-        return AlgebraVectorial(res_x, res_y, res_z)
+        rx = self.y * b.z - self.z * b.y
+        ry = self.z * b.x - self.x * b.z
+        rz = self.x * b.y - self.y * b.x
+        return AlgebraVectorial(rx, ry, rz)
 
     def __str__(self):
         return f"({self.x}, {self.y}, {self.z})"
