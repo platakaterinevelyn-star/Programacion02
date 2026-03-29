@@ -1,7 +1,7 @@
 import math
 
 class AlgebraVectorial():
-    k = 1e-6 
+    
     
     def __init__(self, x, y, z):
         self.x = x
@@ -37,7 +37,7 @@ class AlgebraVectorial():
     def __str__(self):
         return f"({self.x}, {self.y}, {self.z})"
 
-    
+    k = 1e-6 
     @staticmethod
     def perpendicularDiag(a, b):
         suma = (a + b).longitud()
